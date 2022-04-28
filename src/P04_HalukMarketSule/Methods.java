@@ -3,7 +3,7 @@ package P04_HalukMarketSule;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Methods{
+public class Methods extends Variables{
 
     public static void secimYapMethodu() {
 
