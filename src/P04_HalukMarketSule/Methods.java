@@ -18,6 +18,7 @@ public class Methods extends Variables{
         } else {
             System.out.println("Hatali secim yaptiniz. Lutfen tekrar deneyiniz.");
             secimYapMethodu();
+            //
         }
     }
 
