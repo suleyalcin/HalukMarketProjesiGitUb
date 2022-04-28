@@ -3,7 +3,7 @@ package P04_HalukMarketSule;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class HalukMarket {
+public class HalukMarket extends Methods{
     public static void main(String[] args) {
         String no[] = {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"};
         String urun[] = {"Domates", "Patates", "Biber", "Sogan", "Havuc", "Elma", "Muz", "Cilek", "Kavun", "Uzum", "Limon"};
@@ -20,20 +20,6 @@ public class HalukMarket {
         secimYapMethodu();
     }
 
-    public static void secimYapMethodu() {
-
-        System.out.println("Alışverişe devam etmek istiyorsanız E tuşuna, istemiyorsanız H tuşuna basınız.");
-        Scanner scan =new Scanner(System.in);
-        String secim = scan.next().substring(0,1).toUpperCase(Locale.ROOT);
-
-        if (secim.equals("E")){
-            // urunsec(urunListesi, fiyatListesi);
-        }else if (secim.equals("H")){
-            //  paraUstuHesaplaMethodu();
-        }else {
-            System.out.println("Hatali secim yaptiniz. Lutfen tekrar deneyiniz.");
-            secimYapMethodu();
-        }
 
     }
-}
+
