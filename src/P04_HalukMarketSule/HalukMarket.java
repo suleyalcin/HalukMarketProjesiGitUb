@@ -14,7 +14,6 @@ public class HalukMarket extends Methods{
 
         for (int i = 0; i < urun.length; i++) {
             System.out.printf("%-7s %-11s %5s\n", no[i], urun[i], fiyat[i]);
-            //
         }
 
 
