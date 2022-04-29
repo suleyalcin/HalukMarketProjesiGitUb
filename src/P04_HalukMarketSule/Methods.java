@@ -1,26 +1,25 @@
 package P04_HalukMarketSule;
 
-import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
-public class Methods extends Variables {
-    public static void urunSec(List<String> urunListesi, List<Double>fiyatListesi){
-        System.out.println("******** HALUK MARKETE HOSGELDİNİZ **********");
-        System.out.println("Lütfen almak istediginiz urunun numarasını giriniz :\n " +urunListesi);
-        int secilenUrun=scan.nextInt();
-        System.out.println("Lütfen kac kg almak istediginizi giriniz : ");
-        double miktar=scan.nextDouble();
-        sepet.add(miktar+ " kg " + (urunListesi.get(secilenUrun - 1 ).replaceAll("\\d","")))+
-                sepetTutari += fiyatListesi.get(secilenUrun -1)*miktar;
-        System.out.println("Su an sepetteki urunler : " +sepet);
-        secimYapMetodu();
+public class Methods extends Variables{
 
+    public static void secimYapMethodu() {
 
+        System.out.println("Alışverişe devam etmek istiyorsanız E tuşuna, istemiyorsanız H tuşuna basınız.");
+        Scanner scan = new Scanner(System.in);
+        String secim = scan.next().substring(0, 1).toUpperCase(Locale.ROOT);
+
+        if (secim.equals("E")) {
+            // urunsec(urunListesi, fiyatListesi);
+        } else if (secim.equals("H")) {
+            //  paraUstuHesaplaMethodu();
+        } else {
+            System.out.println("Hatali secim yaptiniz. Lutfen tekrar deneyiniz.");
+            secimYapMethodu();
+            //
+        }
     }
-
-    private static void secimYapMetodu() {
-
-    }
-
 
 }
