@@ -1,4 +1,4 @@
-package P04_HalukMarketSule;
+package P04_HalukMarket;
 
 import java.util.ArrayList;
 import java.util.Arrays;
