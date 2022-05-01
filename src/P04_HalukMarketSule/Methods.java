@@ -1,5 +1,5 @@
 package P04_HalukMarketSule;
-
+//1.05
 import java.util.Locale;
 import java.util.Scanner;
 
