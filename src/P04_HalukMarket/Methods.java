@@ -19,6 +19,7 @@ public class Methods extends Variables{
             secimYapMethodu();
             //
             // merhaba
+            // selam
         }
     }
 }
