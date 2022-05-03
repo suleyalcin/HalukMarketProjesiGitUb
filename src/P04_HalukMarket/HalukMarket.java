@@ -16,8 +16,7 @@ public class HalukMarket extends Methods{
             System.out.printf("%-7s %-11s %5s\n", no[i],urun[i],fiyat[i]);
         }
 
-
-        secimYapMethodu();
+        urunSec(urunListesi,fiyatListesi);
     }
 
 
