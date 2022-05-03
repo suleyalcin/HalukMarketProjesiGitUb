@@ -61,15 +61,13 @@ public class Methods extends Variables{
         String secim = scan.next().substring(0, 1).toUpperCase(Locale.ROOT);
 
         if (secim.equals("E")) {
-            // urunsec(urunListesi, fiyatListesi);
+             urunSec(urunListesi, fiyatListesi);
         } else if (secim.equals("H")) {
-            //  paraUstuHesaplaMethodu();
+              paraUstuHesaplaMethodu();
         } else {
             System.out.println("Hatali secim yaptiniz. Lutfen tekrar deneyiniz.");
             secimYapMethodu();
-            //
-            // merhaba
-            // selam
+
         }
     }
 
