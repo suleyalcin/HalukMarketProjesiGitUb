@@ -69,18 +69,29 @@ public class Methods extends Variables {
 
     public static double paraUstuHesaplaMethodu(){
         System.out.println("Lütfen hesap bakiyenizi giriniz : ");
-        musteriBakiye = scan.nextDouble();
-        System.out.println("Hesap bakiyeniz : " + musteriBakiye + " tl ödemeniz gereken tutar :" + (double) sepetTutari + "tl");
 
 
-        if (musteriBakiye >= sepetTutari) {
-            System.out.println("Para üstünüz : " + (double) (musteriBakiye - sepetTutari) + "tldir \n" + " ***Yine Bekleriz***");
-            return (musteriBakiye - sepetTutari);
+        do{
+            try {
+                musteriBakiye = scan.nextDouble();
+                System.out.println("Hesap bakiyeniz : " + musteriBakiye + " tl ödemeniz gereken tutar :" + (double) sepetTutari + "tl");
 
-        } else {
-            System.out.println("Yetersiz Bakiye");
 
-        }
+                if (musteriBakiye >= sepetTutari) {
+                    System.out.println("Para üstünüz : " + (double) (musteriBakiye - sepetTutari) + "tldir \n" + " ***Yine Bekleriz***");
+                    return (musteriBakiye - sepetTutari);
+
+                } else {
+                    System.out.println("Yetersiz Bakiye");
+
+                }
+                break;
+            }catch (Exception e){
+                System.out.println("lutfen sayı giriniz");
+                scan.nextLine();
+            }
+        }while (true);
+
         return 0;
     }
 
